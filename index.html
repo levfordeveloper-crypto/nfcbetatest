@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>memoria</title>
+    <meta name="theme-color" content="#000001">
+    <link rel="stylesheet" href="public/users/css/styles.css">
+    <link rel="icon" href="public\src\img\1281904753252765717.png" type="image/x-icon">
+    <link rel="shortcut icon" href="public\src\img\1281904753252765717.png" type="image/x-icon"> 
+    <meta content="memoriazz" property="og:title" />
+    <meta content="http://memoria/" property="og:url" />
+    <meta content="https://i.imgur.com/y6XhCX6.jpeg" property="og:image" />
+    <meta content="#000001" data-react-helmet="true" name="theme-color" /   >
+</head>
+<script src="effects.js"></script>
+
+<body>
+
+    <div id="overlay">  
+        <button class="overlaybtn fontsqueeze loading-text" onclick="handleOverlayClick()">Click Here</button>
+    </div>
+
+    <div id="user-page" >    
+
+        <img class="background" src="./assets/sonder.gif" draggable="false" style="object-fit: cover;">
+
+        <div class="main-container" id="mainDiv">
+
+            <div class="profile-container">
+                <img class="pp" src="./assets/pp.jpg" draggable="false">
+                <!--<p class="username pulsing" data-tooltip="uid: 1">Karl</p>-->
+                <p class="username pulsing">Karl</p>
+
+                <div class="links-container" id="linksDiv">
+    
+    
+                    <div class="logo facebook" id="fb" onclick="window.open('https://www.facebook.com/share/18G2MECPoU/?mibextid=wwXIfr', '_blank');" bis_skin_checked="1">
+                        <svg viewBox="-5 -15 130 130" width="32" height="32" class="links" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 0C22.386 0 0 22.386 0 50c0 24.964 18.288 45.647 42.187 49.388V64.453H29.492V50h12.695V39.13c0-12.534 7.465-19.458 18.886-19.458 5.47 0 11.188.976 11.188.976v12.296h-6.303c-6.212 0-8.148 3.855-8.148 7.81V50h13.867l-2.216 14.453H58.398v34.935C82.287 95.647 100.575 74.964 100.575 50 100.575 22.386 78.189 0 50 0z" fill="#1877F2"/>
+                        </svg>
+                    </div>
+                    
+                    <!-- Instagram -->
+                    <div class="logo instagram" id="ig" onclick="window.open('https://www.instagram.com/carl_withk/', '_blank');" bis_skin_checked="1">
+                        <svg fill="#d62976" viewBox="0 0 32 32" class="links" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <path d="M22.3,8.4c-0.8,0-1.4,0.6-1.4,1.4c0,0.8,0.6,1.4,1.4,1.4c0.8,0,1.4-0.6,1.4-1.4C23.7,9,23.1,8.4,22.3,8.4z"/>
+                                <path d="M16,10.2c-3.3,0-5.9,2.7-5.9,5.9s2.7,5.9,5.9,5.9s5.9-2.7,5.9-5.9S19.3,10.2,16,10.2z M16,19.9c-2.1,0-3.8-1.7-3.8-3.8c0-2.1,1.7-3.8,3.8-3.8c2.1,0,3.8,1.7,3.8,3.8C19.8,18.2,18.1,19.9,16,19.9z"/>
+                                <path d="M20.8,4h-9.5C7.2,4,4,7.2,4,11.2v9.5c0,4,3.2,7.2,7.2,7.2h9.5c4,0,7.2-3.2,7.2-7.2v-9.5C28,7.2,24.8,4,20.8,4z M25.7,20.8c0,2.7-2.2,5-5,5h-9.5c-2.7,0-5-2.2-5-5v-9.5c0-2.7,2.2-5,5-5h9.5c2.7,0,5,2.2,5,5V20.8z"/>
+                            </g>
+                        </svg>
+                    </div>
+                    
+                    <!-- TikTok -->
+                    <div class="logo tiktok" id="tt" onclick="window.open('https://www.tiktok.com/@karlalave', '_blank');" bis_skin_checked="1">
+                        <svg fill="#f7f7f7" class="links" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z"/>
+                        </svg>
+                    </div>
+                    
+                    <!-- Threads -->
+                    <div class="logo threads" id="threads" onclick="window.open('https://www.threads.com/@Carl_withk', '_blank');" bis_skin_checked="1">
+                        <svg viewBox="-2 -2 28 28" width="32" height="32" class="links" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.263 11.097c-.03-3.486-1.92-5.586-5.111-5.586-2.13 0-3.922.963-4.863 2.499l2.062 1.438c.535-.843 1.272-1.543 2.628-1.543 1.528 0 2.318.85 2.544 2.431a15 15 0 0 0-2.236-.173c-4.125 0-6.068 1.867-6.068 4.336s1.943 3.99 4.804 3.99c3.139 0 5.013-2.115 5.781-4.735.798.361 1.348 1.204 1.348 2.47 0 3.387-3.907 5.232-7.22 5.232-4.885 0-8.077-3.207-8.077-8.424 0-6.392 4.223-10.487 9.9-10.487 3.808 0 5.69 1.671 6.97 3.914l2.108-1.475C21.44 2.078 18.331 0 13.663 0 6.227 0 1.168 5.277 1.168 12.934c0 7 4.953 11.066 10.856 11.066 4.878 0 9.809-2.846 9.809-7.716 0-2.545-1.46-4.231-3.569-5.187m-6.33 4.855c-1.077 0-2.026-.512-2.026-1.453 0-1.483 1.822-1.934 3.606-1.934.678 0 1.34.045 1.927.173-.422 1.927-1.671 3.215-3.508 3.214Z" fill="#ffffff"/>
+                        </svg>
+                    </div>
+
+                <!--<div class="linksline"></div>-->
+
+                <!--<div class="views-container">
+                    <svg viewBox="0 0 24 24" width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0" style="margin-bottom: -3px;"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3 14C3 9.02944 7.02944 5 12 5C16.9706 5 21 9.02944 21 14M17 14C17 16.7614 14.7614 19 12 19C9.23858 19 7 16.7614 7 14C7 11.2386 9.23858 9 12 9C14.7614 9 17 11.2386 17 14Z" stroke="#c18be0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    <span id="view-count">236</span>-->
+                </div>
+            </div>
+
+        <!--<div class="mutebutton">
+            <p id="mutetext" onclick="toggleMusic()">on</p>
+        </div>-->
+
+    </div>
+
+    <audio id="backgroundsong" src="./assets/sonder.mp3" loop></audio>
+
+</body>
+
+</html>
+
